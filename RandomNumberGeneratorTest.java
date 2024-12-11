@@ -21,12 +21,6 @@ public class RandomNumberGeneratorTest {
 
     public static void main(String[] args) {
         RandomNumberGenerator rng = new RandomNumberGenerator(new Random());
-        int[] randomNumbers = rng.generateRandomNumbers(10, 100);
-        
-        System.out.println("10 Random Numbers:");
-        for (int number : randomNumbers) {
-            System.out.println(number);
-        }
 
         // Run tests
         testRandomNumberGenerator(rng);
