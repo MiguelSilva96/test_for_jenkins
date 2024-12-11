@@ -6,7 +6,7 @@ public class RandomNumberGeneratorTest {
     private final Random random;
 
     // Constructor to allow dependency injection for better testing
-    public RandomNumberGenerator(Random random) {
+    public RandomNumberGeneratorTest(Random random) {
         this.random = random;
     }
 
@@ -20,7 +20,7 @@ public class RandomNumberGeneratorTest {
     }
 
     public static void main(String[] args) {
-        RandomNumberGenerator rng = new RandomNumberGenerator(new Random());
+        RandomNumberGenerator rng = new RandomNumberGeneratorTest(new Random());
 
         // Run tests
         testRandomNumberGenerator(rng);
