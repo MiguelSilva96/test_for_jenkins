@@ -20,14 +20,14 @@ public class RandomNumberGeneratorTest {
     }
 
     public static void main(String[] args) {
-        RandomNumberGenerator rng = new RandomNumberGeneratorTest(new Random());
+        RandomNumberGeneratorTest rng = new RandomNumberGeneratorTest(new Random());
 
         // Run tests
         testRandomNumberGenerator(rng);
     }
 
     // Method to test the random number generator
-    public static void testRandomNumberGenerator(RandomNumberGenerator rng) {
+    public static void testRandomNumberGenerator(RandomNumberGeneratorTest rng) {
         int[] randomNumbers = rng.generateRandomNumbers(10, 100);
 
         // Check if the array length is 10
